@@ -33,7 +33,7 @@ export default function CustomEdge(props: EdgeProps) {
 
   return (
     <>
-      <BezierEdge {...props} />
+      <BezierEdge {...props} markerEnd="url(#arrowhead)" /> {/* <-- This line is key */}
       <EdgeLabelRenderer>
         <IconButton
           aria-label="Delete Edge"
